@@ -1,23 +1,517 @@
 /* our custom styles */
 
-// DELETE ME:
-.custom-theme-marker {
+@2020-lightpink:      #F286b6;
+@2020-darkpink:        #d70d53;
+@2020-darkestpink:             #9e76b4;
+@2020-grey:             #eee;
+@2020-darkgrey:     #272725;
+@2020-darkest:      #171715;
+@2020-gradient:         linear-gradient(70deg, @2020-lightpink,@2020-darkpink);
+
+@plone-body-bg:            @2020-darkgrey;
+@plone-text-color:    white;
+@plone-text-discreet: lighten(@2020-darkpink,5%);
+
+@plone-sitenav-link-hover-bg: @2020-lightpink;
+@plone-breadcrumb-bg: @2020-darkgrey;
+@plone-breadcrumb-color:              @2020-darkpink;
+//** Text color of current page in the breadcrumb
+@plone-breadcrumb-active-color:       @2020-darkestpink;
+@plone-link-color-on-grey: @2020-darkestpink;
+
+@lovelo-font-path: '../lovelo';
+
+@font-face {
+	font-family: 'Lovelo Black';
+	src: url('@{lovelo-font-path}/lovelo_black-webfont.eot');
+	src: url('@{lovelo-font-path}/lovelo_black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('@{lovelo-font-path}/lovelo_black-webfont.woff2') format('woff2'),
+		 url('@{lovelo-font-path}/lovelo_black-webfont.woff') format('woff'),
+		 url('@{lovelo-font-path}/lovelo_black-webfont.ttf') format('truetype'),
+		 url('@{lovelo-font-path}/lovelo_black-webfont.svg#loveloblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lovelo Line';
+	src: url('@{lovelo-font-path}/lovelo_line_bold-webfont.eot');
+	src: url('@{lovelo-font-path}/lovelo_line_bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('@{lovelo-font-path}/lovelo_line_bold-webfont.woff2') format('woff2'),
+		 url('@{lovelo-font-path}/lovelo_line_bold-webfont.woff') format('woff'),
+		 url('@{lovelo-font-path}/lovelo_line_bold-webfont.ttf') format('truetype'),
+		 url('@{lovelo-font-path}/lovelo_line_bold-webfont.svg#loveloline_bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lovelo Line';
+	src: url('@{lovelo-font-path}/lovelo_line_light-webfont.eot');
+	src: url('@{lovelo-font-path}/lovelo_line_light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('@{lovelo-font-path}/lovelo_line_light-webfont.woff2') format('woff2'),
+		 url('@{lovelo-font-path}/lovelo_line_light-webfont.woff') format('woff'),
+		 url('@{lovelo-font-path}/lovelo_line_light-webfont.ttf') format('truetype'),
+		 url('@{lovelo-font-path}/lovelo_line_light-webfont.svg#loveloline_light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+h1,h2,h3{font-family: "Lovelo Black"};
+@plone-link-color: @2020-darkpink;
+@plone-link-color-on-dark: @2020-darkpink;
+@plone-btn-context-color:              		#fff;
+@plone-btn-context-bg:                 		@2020-darkpink;
+@plone-btn-context-border:             		darken(@plone-btn-context-bg, 10%);
+
+@plone-font-size-base:          16px;
+
+
+#content-core a  {
+    border-bottom: none;
+    text-decoration: underline;
+}
+.mce-edit-focus {
+    color: #000;
+}
+#formfield-form-widgets-interest-groups{display: none}
+div.container label {color: @2020-darkpink}
+div.formControls {background-color: @2020-darkgrey}
+.plone-modal-content  {color: #000}
+form#newsletter-subscriber-form label {color: #FFF};
+
+.newsImageContainer{margin: 0 0 1em 1em}
+.image-right{margin: 0.5em 0 0.5em 1em}
+
+form#searchGadget_form.pat-livesearch{
+    max-width: 200px;
+    min-width: 200px;
+}
+.pat-livesearch{
+    min-width: 230px;
+    position:relative;
+
+    .livesearch-results{
+        display:none;
+        position: absolute;
+        background-color: @2020-darkgrey;
+        z-index: 100;
+
+        border-right: 1px solid #64bee8;
+        border-bottom: 1px solid #64bee8;
+        border-left: 1px solid #64bee8;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
+        -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a{font-weight: 700}
+        li{
+            white-space: normal;
+            margin: 0;
+            padding: 5px;
+            cursor: pointer;
+
+            &.load-more{
+                .next{
+                    float: right;
+                }
+                .prev{
+                    float: left;
+                }
+                .page{
+                    text-align: center;
+                }
+            }
+        }
+        li:hover,li.selected{
+            background-color: @2020-darkpink;
+        }
+    }
+}
+#search-results-wrapper {
+    color: white;
+}
+#search-results-wrapper .autotoc-nav{background: @2020-darkpink}
+#search-results-wrapper .autotabs {background: @2020-darkgrey}
+
+@media (min-width: 768px){
+#portal-header #portal-searchbox {
+    width: 50%;
+}
+  #portal-header #portal-searchbox {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    margin-left: 1em;
+    padding-top: 0;
+    clear: none;
+    float: right;
+    max-width: 50%;
+    width: 200px;
+    white-space: nowrap;
+  }
+  #portal-header #portal-searchbox .searchSection {
     display: none;
-    position: absolute;
-    top: 300px;
-    left: 30%;
-    margin: auto 0;
-    transform: rotate(-20deg);
-    background: #00ECFF;
-    color: #fff;
-    padding: 1em;
-    z-index: 100;
+  }
+    #portal-header #portal-searchbox [type="submit"] {
+    display: none;
+  }
 }
-.section-front-page .custom-theme-marker{
+.subsection-compact a{color: white}
+.section-about img.image-inline{
+    margin: 1.5em 3em 1.5em 0em;
+}
+.portlet .portletHeader {background: @2020-darkpink;
+color: white;
+}
+.portlet > :first-child {border-radius: 0px}
+
+.subsection-compact table{
+    background-color: transparent;
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+}
+.subsection-compact td[colspan]{
+    background-color: #E9500E;
+}
+
+table {
+    border: none;
+}
+table tbody tr td, table thead tr td {
+    border: none;
+}
+td, th {padding: 0.5em}
+.pagination ul {
+    list-style-type: none;
+    margin-bottom: 2em;
+    margin-left: -3em;
+}
+.pagination a{
+    padding: 8px 16px;
+    background-color: #ddd;
+    text-decoration: none;
+    transition: background-color .3s;
+        -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    border: 1px solid #ddd
+}
+.pagination a:hover{
+    background-color: #E9DBF4;
+}
+.pagination .previous {
+    float: left;
+}
+.pagination .next {
+    float: right;
+}
+
+
+p.callout {
+    background: none;
+    padding-left: 1em;
+    padding-right: 0;
+    border-left: 1em solid #ccc;
+    clear: both;
+}
+p.callout img.image-right {
+    max-width: 50%;
+    margin: 0;
+}
+.plone-navbar {
+  .clearfix();
+  background-color: @2020-darkpink;
+  position: relative;
+  min-height: @plone-sitenav-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: @plone-sitenav-margin-bottom;
+  border: none;
+  box-shadow: none;
+
+  // Prevent floats from breaking the navbar
+  &:extend(.clearfix all);
+}
+
+.plone-navbar-toggle {
+  z-index: 1; //just in case
+  position: relative;
+  float: right;
+  margin-top:  6px;
+  margin-bottom: 3px;
+  padding: 6px 10px;
+
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid white;
+  border-radius: @plone-border-radius-base;
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: darken(@plone-sitenav-link-hover-bg, 15%);
+    border-color: darken(@plone-sitenav-link-hover-bg, 25%);
+  }
+
+  // Burgerbar (uncomment for a ≡ menu and comment menu just below)
+  .icon-bar {
     display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: white;
+    margin-top: 2px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+  .icon-bar + .icon-bar + .icon-bar {
+    margin-bottom: 3px;
+  }
+  //end burgerbar icon-bar
+
+  @media (min-width: @plone-grid-float-breakpoint) {
+    display: none;
+  }
 }
 
 
+
+#portal-footer-wrapper {
+  padding: 30px 15px;
+  color: @plone-text-color;
+  background-color: @2020-darkest;
+  text-align: left;
+  clear: both;
+  p {
+    border-bottom: none;
+    padding-bottom: 28px;
+  }
+  a {
+    color: @plone-link-color-on-dark;
+    &:hover {color: lighten(@plone-link-color-on-dark,15%);}
+  }
+  .portletWrapper {
+    display: inline-block;
+    &:first-child {
+      display: block;
+      border-bottom: none;
+      padding-bottom: 1em;
+      margin-bottom: .5em;
+    }
+  }
+  .portlet {
+    background: transparent;
+    border: 0;
+    font-weight: @plone-font-weight-light;
+    box-shadow: none;
+    margin-bottom: 0;
+    .portletContent {
+      padding: 0;
+      background: transparent;
+      border: 0;
+      > * {padding: inherit;}
+      li {
+        background: transparent;
+        display: inline-block;
+        border: 0;
+        white-space: nowrap;
+        padding: 10px 30px;
+      }
+    }
+    &#portal-colophon .portletContent a { //remove if remove Powered by Plone
+        padding: 10px 30px;
+    }
+    .portletItem:before, .portletItem a:before {
+      content: "";
+    }
+    .portletItem a {
+      padding: 0; border:0;
+    }
+    .portletActions {
+      text-transform: uppercase;
+      font-size: @plone-font-size-small;
+      font-weight: @plone-font-weight-bold;
+      margin-right: 15px;
+    }
+  }
+}
+
+.documentFirstHeading{
+    border-bottom: none;
+}
+.event.summary {
+    max-width: 50%;
+    width: 400px;
+    list-style: none;
+    background-color: @2020-darkpink;
+    margin-bottom: 16em;
+    font-size: 0.9em;
+    margin-left: 1em;
+    clear: right;
+}
+.event.summary a{
+    color: white;
+}
+html [class*="shorts"] .event.summary {
+    margin-bottom: 0em;
+}
+.event h3, .subsection-focus h3 {clear: both}
+.event.summary strong, .event.summary li > span {
+    display: inline;
+}
+.event.summary li.event-category span[itemprop~="eventType"] {
+    padding-right: 1em;
+}
+.event.summary [class^="icon"] {
+    font-size: 30px;
+}
+#portal-header {
+    margin-bottom: 35px;
+}
+#portal-footer img {
+    padding-right: 10em;
+    padding-bottom: 2em;
+}
+.rfd-headertext{
+position: absolute;
+margin-top: -7em;
+margin-left: 24em;
+}
+.rfd-socialmedia{
+    position: absolute;
+    margin-top: -7.3em;
+    margin-left: 20em;
+}
+.rfd-socialmedia img{padding-bottom:0.5em}
+#isotope-filters {
+    clear: both;
+    width: 100%;
+}
+#isotope-filters label {
+    color: white;
+    margin-right: 1em;
+}
+.isotope.item h2 {
+    display: inline;
+}
+div.isotope-image{
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+
+}
+div.isotope-image > img {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+#isotope-filters .button-container h5 {
+    display: inline-block;
+    padding: 0 1em;
+}
+#isotope-filters .plone-button-group {
+    clear: both;
+}
+#isotope-grid {
+    position: relative;
+}
+#isotope-grid h2{
+    font-size: 1.8em;
+    position: absolute;
+    top: 0.2em;
+    left: 1em;
+    color: white;
+    background: rgba(0,0,0,.5);
+    margin-right: 0.5em;
+}
+.isotope-time {
+    position: relative;
+    top: 0em;
+    color: white;
+    background: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#isotope-grid .vertical {
+    padding: 0 1em;
+    width: 100%;
+}
+#isotope-grid .vertical:hover {
+    background-color: #eee;
+}
+#isotope-grid .horizontal {
+    background-color: @2020-darkgrey;
+    border: none;
+    color: white;
+    margin: 1%;
+    padding: 1em;
+    text-align: center;
+    width: 90%;
+}
+#isotope-grid .discreet{color: white}
+#isotope-grid .horizontal:hover {
+    background-color: @2020-darkpink;
+}
+@media (min-width: 768px) {
+#isotope-grid .horizontal {
+    width: 47%;
+}
+}
+@media (min-width: 1200px) {
+#isotope-grid .horizontal {
+    width: 47%;
+}
+}
+@media (max-width: 670px){
+    .rfd-headertext {
+    display: none;
+    }
+    .documentFirstHeading {
+    clear: both;
+    }
+}
+
+@media (max-width: 768px){
+    .rfd-headertext {
+    display: none;
+    }
+    .documentFirstHeading{
+    clear: both;
+    }
+    #portal-header #portal-searchbox {
+  padding-top: 20px;
+  clear: left;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  margin-left: 3px;
+  margin-top: 6em;
+  white-space: nowrap;
+}
+.isotope-time {
+    font-size: 1em;
+    position: relative;
+    top: 0em;
+    background: none;
+}
+#isotope-grid h2 {
+    font-size: 1.2em;
+}
+.event.summary {
+    margin-bottom: 0em;
+}
+}
 /* TinyMCE templates */
 
 // image-grid-2x2:
