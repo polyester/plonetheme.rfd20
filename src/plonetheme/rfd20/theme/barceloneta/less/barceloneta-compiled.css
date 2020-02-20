@@ -4436,7 +4436,7 @@ ul.picker__list {
   border-color: #365979;
 }
 .plone-navbar-toggle .icon-bar::after {
-  content: "Menu";
+  content: "";
   position: relative;
   color: white;
 }
