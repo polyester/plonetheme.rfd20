@@ -1212,12 +1212,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #d70d53;
+  color: #9ac333;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #8f0937;
+  color: #6a8623;
   text-decoration: underline;
 }
 a:focus {
@@ -1292,7 +1292,7 @@ h1 a:focus,
 h2 a:focus,
 h3 a:focus {
   text-decoration: none;
-  border-bottom: 2px #8f0937 solid;
+  border-bottom: 2px #6a8623 solid;
 }
 h4,
 h5,
@@ -1324,7 +1324,7 @@ p {
 .documentDescription {
   font-size: 20px;
   font-weight: 700;
-  color: #ef0e5c;
+  color: #a6ce42;
   margin-bottom: 10px;
 }
 small {
@@ -1338,11 +1338,11 @@ mark {
   padding: 0.2em;
 }
 .discreet {
-  color: #ef0e5c;
+  color: #a6ce42;
   font-weight: 400;
 }
 .documentByLine {
-  color: #ef0e5c;
+  color: #a6ce42;
   font-weight: 400;
   margin-bottom: 11px;
 }
@@ -2103,8 +2103,8 @@ button .badge {
 }
 .context {
   color: #fff;
-  background-color: #d70d53;
-  border-color: #a70a40;
+  background-color: #9ac333;
+  border-color: #7a9b28;
 }
 .context:hover,
 .context:focus,
@@ -2112,8 +2112,8 @@ button .badge {
 .context.active,
 .open > .dropdown-toggle.context {
   color: #fff;
-  background-color: #a70a40;
-  border-color: #6d072a;
+  background-color: #7a9b28;
+  border-color: #546a1c;
 }
 .context:active,
 .context.active,
@@ -2135,11 +2135,11 @@ fieldset[disabled] .context:active,
 .context.disabled.active,
 .context[disabled].active,
 fieldset[disabled] .context.active {
-  background-color: #d70d53;
-  border-color: #a70a40;
+  background-color: #9ac333;
+  border-color: #7a9b28;
 }
 .context .badge {
-  color: #d70d53;
+  color: #9ac333;
   background-color: #fff;
 }
 .destructive {
@@ -2468,7 +2468,7 @@ fieldset[disabled] .link-parent.active {
   content: "";
   position: absolute;
   padding: 0 5px;
-  color: #d70d53;
+  color: #9ac333;
   border-left: 5px solid;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
@@ -2477,10 +2477,10 @@ fieldset[disabled] .link-parent.active {
   padding: 0 !important;
 }
 .plone-breadcrumb ol a {
-  color: #9e76b4;
+  color: #365b1b;
 }
 .plone-breadcrumb ol > #breadcrumbs-current {
-  color: #9e76b4;
+  color: #365b1b;
 }
 .pagination {
   display: inline-block;
@@ -2504,7 +2504,7 @@ fieldset[disabled] .link-parent.active {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #d70d53;
+  color: #9ac333;
   background-color: #fff;
   border: 1px solid #e5e5e5 !important;
   margin-left: -1px;
@@ -2526,7 +2526,7 @@ fieldset[disabled] .link-parent.active {
 }
 .pagination li > a:hover,
 .pagination li > a:focus {
-  color: #8f0937;
+  color: #6a8623;
   background-color: #f2f1f1;
   border: 1px solid #e5e5e5 !important;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2536,8 +2536,8 @@ fieldset[disabled] .link-parent.active {
   z-index: 2;
   font-weight: 400;
   color: #fff;
-  background-color: #d70d53;
-  border: 1px solid #d70d53 !important;
+  background-color: #9ac333;
+  border: 1px solid #9ac333 !important;
   cursor: default;
 }
 .pagination li.disabled > span {
@@ -2724,7 +2724,7 @@ fieldset[disabled] .link-parent.active {
 .alert.status a,
 .portalMessage a {
   font-weight: 400;
-  color: #9d0a3d;
+  color: #749226;
 }
 .alert.status > strong::before,
 .portalMessage > strong::before,
@@ -2887,7 +2887,7 @@ fieldset[disabled] .link-parent.active {
   color: #696969;
 }
 .portlet .portletHeader > a {
-  color: #9e76b4;
+  color: #365b1b;
 }
 .portlet.portletCalendar .portletHeader {
   text-align: center;
@@ -2938,7 +2938,7 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
-  color: #9e76b4;
+  color: #365b1b;
 }
 .portlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -3052,7 +3052,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover,
 .portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
-  color: #8f0937;
+  color: #6a8623;
 }
 .portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
 .portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after {
@@ -3205,7 +3205,7 @@ fieldset[disabled] .link-parent.active {
   color: #696969;
 }
 .managedPortlet .portletHeader > a {
-  color: #9e76b4;
+  color: #365b1b;
 }
 .managedPortlet.portletCalendar .portletHeader {
   text-align: center;
@@ -3256,7 +3256,7 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
-  color: #9e76b4;
+  color: #365b1b;
 }
 .managedPortlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -3370,7 +3370,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:hover,
 .managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
-  color: #8f0937;
+  color: #6a8623;
 }
 .managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
 .managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after {
@@ -3543,7 +3543,7 @@ fieldset[disabled] .link-parent.active {
 }
 a.link-category:hover,
 a.link-category:focus {
-  color: #d70d53;
+  color: #9ac333;
   text-decoration: none;
   cursor: pointer;
 }
@@ -3846,7 +3846,7 @@ a.link-category:focus {
 }
 .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted {
-  background: #d70d53;
+  background: #9ac333;
   color: #fff;
 }
 li.picker__list-item {
@@ -3893,7 +3893,7 @@ ul.picker__list {
 }
 .picker__day--highlighted:hover,
 .picker__day--highlighted {
-  background: #d70d53;
+  background: #9ac333;
   color: #fff;
   font-weight: 600;
 }
@@ -3917,7 +3917,7 @@ ul.picker__list {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
 }
 .pat-tablesorter th:hover {
-  color: #d70d53;
+  color: #9ac333;
 }
 .pat-tablesorter .sortdirection {
   font-size: 75%;
@@ -4085,7 +4085,7 @@ ul.picker__list {
 .plone-nav li a:hover,
 .plone-nav li a:focus {
   text-decoration: none;
-  background-color: #F286b6;
+  background-color: #d9e4a5;
 }
 .plone-nav li ul {
   padding-left: 0.5em;
@@ -4095,7 +4095,7 @@ ul.picker__list {
 }
 .plone-nav li ul li a {
   font-size: 18px;
-  background-color: #d70d53;
+  background-color: #9ac333;
 }
 .plone-nav li .opener {
   display: none;
@@ -4132,7 +4132,7 @@ ul.picker__list {
   text-align: center;
 }
 .plone-nav li label:after {
-  background: #b50b46;
+  background: #84a72c;
   border-radius: 4px;
   content: "▼";
   cursor: pointer;
@@ -4196,7 +4196,7 @@ ul.picker__list {
   }
 }
 .plone-navbar {
-  background-color: #d70d53;
+  background-color: #9ac333;
   color: white;
   position: relative;
   min-height: 50px;
@@ -4291,8 +4291,8 @@ ul.picker__list {
   outline: 0;
 }
 .plone-navbar-toggle:hover {
-  background-color: #eb418c;
-  border-color: #e01871;
+  background-color: #c0d26a;
+  border-color: #b0c743;
 }
 .plone-navbar-toggle .icon-bar::after {
   position: relative;
@@ -4321,7 +4321,7 @@ ul.picker__list {
 .plone-navbar-nav .current > a:focus,
 .plone-navbar-nav .selected > a:focus {
   color: white;
-  background-color: #F286b6;
+  background-color: #d9e4a5;
 }
 @media (min-width: 768px) {
   .plone-navbar-nav {
@@ -4351,7 +4351,7 @@ ul.picker__list {
   .plone-navbar-nav .has_subtree.inPath > a:hover,
   .plone-navbar-nav .has_subtree.inPath > a:focus {
     color: white;
-    background-color: #F286b6;
+    background-color: #d9e4a5;
   }
 }
 .principal {
@@ -4471,10 +4471,10 @@ a.plone-toolbar-logo {
   color: #cccccc;
 }
 #portal-footer-wrapper a {
-  color: #d70d53;
+  color: #9ac333;
 }
 #portal-footer-wrapper a:hover {
-  color: #f33d7c;
+  color: #b9d86a;
 }
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
@@ -4605,7 +4605,7 @@ body.template-logged_out #content-core .portletHeader {
 }
 body.template-login_form #content-core .portletHeader > a,
 body.template-logged_out #content-core .portletHeader > a {
-  color: #9e76b4;
+  color: #365b1b;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader,
 body.template-logged_out #content-core.portletCalendar .portletHeader {
@@ -4667,7 +4667,7 @@ body.template-logged_out #content-core .portletContent > ul > li a {
   padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
-  color: #9e76b4;
+  color: #365b1b;
 }
 body.template-login_form #content-core .portletContent > ul > li > a,
 body.template-logged_out #content-core .portletContent > ul > li > a {
@@ -4811,7 +4811,7 @@ body.template-login_form #content-core.portletCalendar table .cal_next_month.cal
 body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover,
 body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover,
 body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
-  color: #8f0937;
+  color: #6a8623;
 }
 body.template-login_form #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
 body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
@@ -4954,7 +4954,7 @@ body.template-logged_out #content-core .portletFooter {
   overflow: hidden;
 }
 .cal_month {
-  background: #d70d53;
+  background: #9ac333;
   font-weight: 400;
   display: block;
   color: #fff;
@@ -5203,23 +5203,23 @@ body.template-logged_out #content-core .portletFooter {
   color: white;
 }
 @font-face {
-  font-family: 'Lovelo Black';
-  src: url('lovelo/lovelo_black-webfont.eot');
-  src: url('lovelo/lovelo_black-webfont.eot?#iefix') format('embedded-opentype'), url('lovelo/lovelo_black-webfont.woff2') format('woff2'), url('lovelo/lovelo_black-webfont.woff') format('woff'), url('lovelo/lovelo_black-webfont.ttf') format('truetype'), url('lovelo/lovelo_black-webfont.svg#loveloblack') format('svg');
+  font-family: "Lovelo Black";
+  src: url("lovelo/lovelo_black-webfont.eot");
+  src: url("lovelo/lovelo_black-webfont.eot?#iefix") format("embedded-opentype"), url("lovelo/lovelo_black-webfont.woff2") format("woff2"), url("lovelo/lovelo_black-webfont.woff") format("woff"), url("lovelo/lovelo_black-webfont.ttf") format("truetype"), url("lovelo/lovelo_black-webfont.svg#loveloblack") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lovelo Line';
-  src: url('lovelo/lovelo_line_bold-webfont.eot');
-  src: url('lovelo/lovelo_line_bold-webfont.eot?#iefix') format('embedded-opentype'), url('lovelo/lovelo_line_bold-webfont.woff2') format('woff2'), url('lovelo/lovelo_line_bold-webfont.woff') format('woff'), url('lovelo/lovelo_line_bold-webfont.ttf') format('truetype'), url('lovelo/lovelo_line_bold-webfont.svg#loveloline_bold') format('svg');
+  font-family: "Lovelo Line";
+  src: url("lovelo/lovelo_line_bold-webfont.eot");
+  src: url("lovelo/lovelo_line_bold-webfont.eot?#iefix") format("embedded-opentype"), url("lovelo/lovelo_line_bold-webfont.woff2") format("woff2"), url("lovelo/lovelo_line_bold-webfont.woff") format("woff"), url("lovelo/lovelo_line_bold-webfont.ttf") format("truetype"), url("lovelo/lovelo_line_bold-webfont.svg#loveloline_bold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lovelo Line';
-  src: url('lovelo/lovelo_line_light-webfont.eot');
-  src: url('lovelo/lovelo_line_light-webfont.eot?#iefix') format('embedded-opentype'), url('lovelo/lovelo_line_light-webfont.woff2') format('woff2'), url('lovelo/lovelo_line_light-webfont.woff') format('woff'), url('lovelo/lovelo_line_light-webfont.ttf') format('truetype'), url('lovelo/lovelo_line_light-webfont.svg#loveloline_light') format('svg');
+  font-family: "Lovelo Line";
+  src: url("lovelo/lovelo_line_light-webfont.eot");
+  src: url("lovelo/lovelo_line_light-webfont.eot?#iefix") format("embedded-opentype"), url("lovelo/lovelo_line_light-webfont.woff2") format("woff2"), url("lovelo/lovelo_line_light-webfont.woff") format("woff"), url("lovelo/lovelo_line_light-webfont.ttf") format("truetype"), url("lovelo/lovelo_line_light-webfont.svg#loveloline_light") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -5239,7 +5239,7 @@ h3 {
   display: none;
 }
 div.container label {
-  color: #d70d53;
+  color: #9ac333;
 }
 div.formControls {
   background-color: #272725;
@@ -5248,7 +5248,7 @@ div.formControls {
   color: #000;
 }
 form#newsletter-subscriber-form label {
-  color: #FFF;
+  color: #fff;
 }
 .newsImageContainer {
   margin: 0 0 1em 1em;
@@ -5300,13 +5300,13 @@ form#searchGadget_form.pat-livesearch {
 }
 .pat-livesearch .livesearch-results li:hover,
 .pat-livesearch .livesearch-results li.selected {
-  background-color: #d70d53;
+  background-color: #9ac333;
 }
 #search-results-wrapper {
   color: white;
 }
 #search-results-wrapper .autotoc-nav {
-  background: #d70d53;
+  background: #9ac333;
 }
 #search-results-wrapper .autotabs {
   background: #272725;
@@ -5341,7 +5341,7 @@ form#searchGadget_form.pat-livesearch {
   margin: 1.5em 3em 1.5em 0em;
 }
 .portlet .portletHeader {
-  background: #d70d53;
+  background: #9ac333;
   color: white;
 }
 .portlet > :first-child {
@@ -5384,7 +5384,7 @@ th {
   border: 1px solid #ddd;
 }
 .pagination a:hover {
-  background-color: #E9DBF4;
+  background-color: #e9dbf4;
 }
 .pagination .previous {
   float: left;
@@ -5404,7 +5404,7 @@ p.callout img.image-right {
   margin: 0;
 }
 .plone-navbar {
-  background-color: #d70d53;
+  background-color: #9ac333;
   position: relative;
   min-height: 50px;
   margin-bottom: 22px;
@@ -5435,8 +5435,8 @@ p.callout img.image-right {
   outline: 0;
 }
 .plone-navbar-toggle:hover {
-  background-color: #eb418c;
-  border-color: #e01871;
+  background-color: #c0d26a;
+  border-color: #b0c743;
 }
 .plone-navbar-toggle .icon-bar {
   display: block;
@@ -5469,10 +5469,10 @@ p.callout img.image-right {
   padding-bottom: 28px;
 }
 #portal-footer-wrapper a {
-  color: #d70d53;
+  color: #9ac333;
 }
 #portal-footer-wrapper a:hover {
-  color: #f33d7c;
+  color: #b9d86a;
 }
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
@@ -5529,7 +5529,7 @@ p.callout img.image-right {
   max-width: 50%;
   width: 400px;
   list-style: none;
-  background-color: #d70d53;
+  background-color: #9ac333;
   margin-bottom: 16em;
   font-size: 0.9em;
   margin-left: 1em;
@@ -5647,7 +5647,7 @@ div.isotope-image > img {
   color: white;
 }
 #isotope-grid .horizontal:hover {
-  background-color: #d70d53;
+  background-color: #9ac333;
 }
 @media (min-width: 768px) {
   #isotope-grid .horizontal {
