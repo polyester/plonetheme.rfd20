@@ -5353,8 +5353,8 @@ form#searchGadget_form.pat-livesearch {
   color: white;
   font-weight: bold;
 }
-.subsection-compact td[colspan] {
-  background-color: #ef0e5c;
+.subsection-compact td[colspan="8"] {
+  background-color: #9ac333;
 }
 table {
   border: none;
